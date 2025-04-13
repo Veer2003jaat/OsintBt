@@ -88,7 +88,7 @@ async def start_command(bot, message):
         caption=(
             "**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 {}👋!**\n\n"
             "**➠ 𝐈 AM ⚡༄᭄🔥⃝ρ я є м ι υ м❤️❥❥═══: 🐦‍🔥 TEXT UPLOADER BOT 🐦‍🔥**\n\n"
-            "Use Command /cobra \n"
+            "Use Command /kirar \n"
             "**📅 DATE AND TIME: `{date} {current_time}`**\n\n**"
             "**➠𝐌𝐚𝐝𝐞 𝐁𝐲: 🐦‍🔥 ❝𝐂𝐡𝐚𝐦𝐛𝐚𝐥 𝐇𝐢𝐭𝐥𝐞𝐫𝐬 ❥❥═══ ❤️™️**"
         ),
@@ -111,7 +111,7 @@ async def restart_handler(_, m):
     os.execv(sys.executable, ['python'] + sys.argv)
 
 
-@bot.on_message(filters.command(["drm"]))
+@bot.on_message(filters.command(["kirar"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('<blockquote>🐦‍🔥SEND TXT FILE TO DOWNLOAD🐦‍🔥</blockquote>')
     input: Message = await bot.listen(editable.chat.id)
